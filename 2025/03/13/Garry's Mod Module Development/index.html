@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 7.3.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha256-dABdfBfUoC8vJUBOwGVdm8L9qlMWaHTIfXt+7GnZCIo=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.22.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="Garry&#39;s Mod模组开发">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Garry&#39;s Mod Module Development">
+<meta property="og:url" content="http://example.com/2025/03/13/Garry's%20Mod%20Module%20Development/index.html">
+<meta property="og:site_name" content="CsnWeb">
+<meta property="og:description" content="Garry&#39;s Mod模组开发">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2025-03-13T13:24:29.722Z">
+<meta property="article:modified_time" content="2025-03-14T10:47:16.592Z">
+<meta property="article:author" content="Carson">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="http://example.com/2025/03/13/Garry's%20Mod%20Module%20Development/">
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://example.com/2025/03/13/Garry's%20Mod%20Module%20Development/","path":"2025/03/13/Garry's Mod Module Development/","title":"Garry's Mod Module Development"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>Garry's Mod Module Development | CsnWeb</title>
+  
+
+
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">CsnWeb</p>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%BC%80%E5%A7%8B"><span class="nav-number">1.</span> <span class="nav-text">开始</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%9B%E5%BB%BA%E8%84%9A%E6%9C%AC"><span class="nav-number">2.</span> <span class="nav-text">创建脚本</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%A7%A3%E9%87%8A"><span class="nav-number">3.</span> <span class="nav-text">解释</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BF%9D%E5%AD%98%E8%84%9A%E6%9C%AC"><span class="nav-number">4.</span> <span class="nav-text">保存脚本</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BF%90%E8%A1%8C%E8%84%9A%E6%9C%AC"><span class="nav-number">5.</span> <span class="nav-text">运行脚本</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%87%AA%E5%8A%A8%E8%BF%90%E8%A1%8C%E8%84%9A%E6%9C%AC"><span class="nav-number">6.</span> <span class="nav-text">自动运行脚本</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9C%A8%E5%AE%A2%E6%88%B7%E7%AB%AF%E6%88%96%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8A%E5%8A%A0%E8%BD%BD%E8%84%9A%E6%9C%AC%E7%9A%84%E6%9F%90%E4%BA%9B%E9%83%A8%E5%88%86"><span class="nav-number">7.</span> <span class="nav-text">在客户端或服务器上加载脚本的某些部分</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%8E%A5%E4%B8%8B%E6%9D%A5%E6%98%AF%E4%BB%80%E4%B9%88"><span class="nav-number">8.</span> <span class="nav-text">接下来是什么?</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Carson</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">4</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+  </nav>
+</div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2025/03/13/Garry's%20Mod%20Module%20Development/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Carson">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="CsnWeb">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="Garry's Mod Module Development | CsnWeb">
+      <meta itemprop="description" content="Garry's Mod模组开发 ">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Garry's Mod Module Development
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2025-03-13 21:24:29" itemprop="dateCreated datePublished" datetime="2025-03-13T21:24:29+08:00">2025-03-13</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2025-03-14 18:47:16" itemprop="dateModified" datetime="2025-03-14T18:47:16+08:00">2025-03-14</time>
+    </span>
+
+  
+</div>
+
+            <div class="post-description">Garry's Mod模组开发 </div>
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><h2 id="开始"><a href="#开始" class="headerlink" title="开始"></a><span style="font-size: 20px; background-color: yellow; padding: 2px 4px; border-radius: 3px;">开始</span></h2><p><span style="font-size: 20px;">介绍<br>Lua文件称为Lua脚本。Lua脚本是纯文本文件。要创建和编辑Lua脚本，您需要一个纯文本编辑器，如记事本。<br>您可以使用任何纯文本编辑器，但如果不使用专业代码编辑器，如Sublime text或Visual Studio Code，您将很难使用。<br>在这些教程中，我们将把您首选的文本编辑器称为“记事本”。</p>
+<p>注意!!!不要使用写字板。<br>它是一个格式化文本编辑器，而不是纯文本编辑器。它会在代码周围放置无用的标签，导致加载时失败。根据经验，如果你可以在一个文件中使用两种不同字体的文本，那么它就不是一个纯文本编辑器。</p>
+<h2 id="创建脚本"><a href="#创建脚本" class="headerlink" title="创建脚本"></a><span style="font-size: 20px; background-color: yellow; padding: 2px 4px; border-radius: 3px;">创建脚本</span></h2><p>对于我们的第一个脚本，我们不会做任何太复杂的事情。我们将学习如何在控制台中打印消息。<br>打印功能正是这样做的。在您选择的编辑器中键入以下代码：</span></p>
+<figure class="highlight lua"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">print</span>(<span class="string">&quot;hello world&quot;</span>)</span><br></pre></td></tr></table></figure>
+
+<p><span style="font-size: 20px;">这样就打完了！这难道不容易吗？本应如此。</span></p>
+<h2 id="解释"><a href="#解释" class="headerlink" title="解释"></a><span style="font-size: 20px; background-color: yellow; padding: 2px 4px; border-radius: 3px;">解释</span></h2><p><span style="font-size: 20px;">打印是一种功能。函数是一个命令，当你调用它时，它会做一些事情。许多函数都可以接受参数，即你给函数的数据，以改变它的确切功能。在这种情况下，print（）只接受一个参数，即字符串（一系列字母、数字、空格等），当调用print（）时，它会将该字符串放入Garry’s Mod的控制台中。</p>
+<h2 id="保存脚本"><a href="#保存脚本" class="headerlink" title="保存脚本"></a><span style="font-size: 20px; background-color: yellow; padding: 2px 4px; border-radius: 3px;">保存脚本</span></h2><p>现在，您已经准备好保存实际的Lua文件。要查找您的Lua文件夹，请按照以下路径操作——根据您在计算机上安装Garry’s Mod的位置，此路径可能不同，但看起来像这样：</span></p>
+<figure class="highlight lua"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">C:\Program Files\Steam\steamapps\common\GarrysMod\garrysmod\lua\</span><br><span class="line">这可能会不一样</span><br></pre></td></tr></table></figure>
+
+<p><span style="font-size: 20px;">在文件名框中，键入helloworld.lua（请注意，您必须指定.lua），然后在另存为类型框中，选择所有文件。现在，只需按enter键（或按保存按钮）即可保存脚本。<br>选中文件资源管理器中的“文件扩展名”框<br>确保在文件资源管理器中选中了“文件扩展名”复选框。除非选中此项，否则您的文本编辑器可能会意外地将.lua文件另存为.lua.txt。要确保选中此框，请打开“文件资源管理器”窗口，单击顶部的“视图”选项卡，然后选中该框（它位于顶部的“显示&#x2F;隐藏”类别内）。</p>
+<h2 id="运行脚本"><a href="#运行脚本" class="headerlink" title="运行脚本"></a><span style="font-size: 20px; background-color: yellow; padding: 2px 4px; border-radius: 3px;">运行脚本</span></h2><p>要运行任何脚本，您需要播放地图。进入游戏后，打开开发者控制台并键入以下内容:</span></p>
+<figure class="highlight lua"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">print</span>(<span class="string">&quot;lua_openscript helloworld.lua&quot;</span>)</span><br></pre></td></tr></table></figure>
+
+<p><span style="font-size: 20px;">按enter键。如果到目前为止你做得一切都正确，你应该会在控制台中看到一条消息：</span></p>
+<figure class="highlight lua"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hello world</span><br></pre></td></tr></table></figure>
+
+<p><span style="font-size: 20px;">恭喜你，你已经编写并运行了你的第一个Lua脚本。</span></p>
+<h2 id="自动运行脚本"><a href="#自动运行脚本" class="headerlink" title="自动运行脚本"></a><span style="font-size: 20px; background-color: yellow; padding: 2px 4px; border-radius: 3px;">自动运行脚本</span></h2><p><span style="font-size: 20px;">要使脚本在服务器启动时自动运行，只需将其放入其中一个文件夹即可。同样，如果你在其他地方安装了Garry’s Mod，请导航到那里。</span></p>
+<p><span style="font-size: 20px;">用于共享脚本（在客户端或服务器上加载</span></p>
+<figure class="highlight lua"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">(<span class="string">&quot;C:\Program Files\Steam\steamapps\common\GarrysMod\garrysmod\lua\autorun&quot;</span>)</span><br></pre></td></tr></table></figure>
+<p>仅用于客户端脚本（仅在客户端加载）</p>
+<figure class="highlight lua"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">(<span class="string">&quot;C:\Program Files\Steam\steamapps\common\GarrysMod\garrysmod\lua\autorun\client&quot;</span>)</span><br></pre></td></tr></table></figure>
+<p>仅用于服务器脚本（仅在服务器上加载）</p>
+<figure class="highlight lua"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">(<span class="string">&quot;C:\Program Files\Steam\steamapps\common\GarrysMod\garrysmod\lua\autorun\server&quot;</span>)</span><br></pre></td></tr></table></figure>
+
+<h2 id="在客户端或服务器上加载脚本的某些部分"><a href="#在客户端或服务器上加载脚本的某些部分" class="headerlink" title="在客户端或服务器上加载脚本的某些部分"></a><span style="font-size: 20px; background-color: yellow; padding: 2px 4px; border-radius: 3px;">在客户端或服务器上加载脚本的某些部分</span></h2><span style="font-size: 20px;">
+对于这个特定的教程，这些路径中的任何一条都可以很好地工作。
+所有客户端和共享文件都必须使用AddCSLuaFile进行下载，以便在多人游戏中工作。
+在客户端或服务器上加载脚本的某些部分
+
+<p>如果你想为客户端和服务器端代码使用一个文件，但想在客户端和服务器之间使用单独的代码部分，我们可以这样做：<br>仅在客户端上运行代码</p>
+<figure class="highlight lua"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">(<span class="string">&quot;if CLIENT then</span></span><br><span class="line"><span class="string">   --Your clientside code here</span></span><br><span class="line"><span class="string">end&quot;</span>)</span><br></pre></td></tr></table></figure>
+<p>仅在服务器上运行代码&lt;</p>
+<figure class="highlight lua"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">(<span class="string">&quot;if SERVER then</span></span><br><span class="line"><span class="string">   --Your serverside code here</span></span><br><span class="line"><span class="string">end&quot;</span>)</span><br></pre></td></tr></table></figure>
+
+<p>要加载到共享（客户端或服务器）上，不要专门检查客户端或服务器，只需将代码放在没有if块的地方即可.</p>
+<figure class="highlight lua"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">(<span class="string">&quot;print( &quot;</span>Hello Shared!<span class="string">&quot; )</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">if SERVER then</span></span><br><span class="line"><span class="string">  print( &quot;</span>Hello Server!<span class="string">&quot; )</span></span><br><span class="line"><span class="string">end</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">if CLIENT then</span></span><br><span class="line"><span class="string">  print( &quot;</span>Hello Client!<span class="string">&quot; )</span></span><br><span class="line"><span class="string">end</span></span><br><span class="line"><span class="string">&quot;</span>)</span><br></pre></td></tr></table></figure>
+
+<p>您在上面看到的CLIENT和SERVER变量在States页面上进行了解释。</p>
+<h2 id="接下来是什么"><a href="#接下来是什么" class="headerlink" title="接下来是什么?"></a><span style="font-size: 20px; background-color: yellow; padding: 2px 4px; border-radius: 3px;">接下来是什么?</span></h2><p>接下来，我们将学习变量。<br>客户端、服务器端和共享在这里进行了解释：States</span></p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2025/03/09/MyGmodMods/" rel="prev" title="MyMods">
+                  <i class="fa fa-angle-left"></i> MyMods
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2025</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">Carson</span>
+  </div>
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/muse/" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/sidebar.js"></script><script src="/js/next-boot.js"></script>
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+</body>
+</html>
